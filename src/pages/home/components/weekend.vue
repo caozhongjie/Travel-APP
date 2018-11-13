@@ -2,13 +2,13 @@
   <div>
     <div class="recommend-title">周末去哪儿</div>
     <ul>
-      <li class="item border-bottom" v-for="item in recommendList">
+      <li class="item border-bottom" v-for="item in weekendList">
         <div class="item-wrapper-img">
         <img class="item-img"
              :src="item.imgUrl" alt="">
         </div>
         <div class="item-info">
-          <p class="item-title">{{item.title}}</p>
+          <p class="item-title">{{item.name}}</p>
           <p class="item-desc">{{item.desc}}</p>
         </div>
       </li>
@@ -66,6 +66,9 @@
           }
         ]
       }
+    },
+    props:{
+      weekendList:Array
     }
   }
 </script>
@@ -73,14 +76,13 @@
 <style scoped lang="stylus">
   @import '~styles/mixins.styl'
   .recommend-title
-    margin-top .2rem
     line-height .8rem
     background #eee
     text-indent .2rem
   .item-wrapper-img
     height 0
     overflow hidden
-    padding-bottom 33.9%
+    padding-bottom 37.09%
     .item-img
       width 100%
   .item-info

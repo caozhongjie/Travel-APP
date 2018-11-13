@@ -1,12 +1,12 @@
 <template>
   <div class="icons">
-    <swiper>
+    <swiper :options="swiperOption">
       <swiper-slide v-for="(page,index) in pages" :key="index">
         <div class="icon" v-for="item in page" :key="item.id">
           <div class="icon-img">
-            <img class="icon-img-content" :src="item.src" alt="">
+            <img class="icon-img-content" :src="item.imgUrl" alt="">
           </div>
-          <p class="icon-text">{{item.title}}</p>
+          <p class="icon-text">{{item.desc}}</p>
         </div>
       </swiper-slide>
     </swiper>
@@ -64,13 +64,16 @@
             src: "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
             title: "景点门票"
           }
-        ]
+        ],
+        swiperOption:{
+          autoplay:false
+        }
       }
     },
     computed: {
       pages() {
         const pages = [];
-        this.imglIst.forEach((item, index) => {
+        this.iconList.forEach((item, index) => {
           const page = Math.floor(index / 8) //根据值来判断显示咋第几页，向下取整0-7位第一页
           if (!pages[page]) {
             pages[page] = []
@@ -79,6 +82,9 @@
         })
         return pages
       }
+    },
+    props:{
+      iconList:Array
     }
   }
 </script>
