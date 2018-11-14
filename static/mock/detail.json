@@ -1,0 +1,86 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "成都松鼠部落森林假日公园",
+    "bannerImage": "http://img1.qunarzz.com/sight/p0/1609/29/2916ae570302fe94a3.water.jpg_600x330_40db8eb4.jpg",
+    "gallaryImages":[
+      "http://img1.qunarzz.com/sight/p0/1609/54/547f39d711db5d43a3.img.jpg_r_800x800_ebd609a8.jpg",
+      "http://img1.qunarzz.com/sight/p0/1609/fb/fb1d0e8e9c29857ea3.img.jpg_r_800x800_2c3212d9.jpg",
+      "http://img1.qunarzz.com/sight/p0/1609/1d/1df9c5e24886181fa3.img.jpg_r_800x800_3890b215.jpg",
+      "http://img1.qunarzz.com/sight/p0/1609/f5/f5445f648fd7e719a3.img.jpg_r_800x800_38ccdf51.jpg"
+    ],
+    "ticketList": [
+      {
+        "id": "00001",
+        "ticketGroup": "促销",
+        "ticketTypeInfo": [
+          {
+            "ticketTypeName": "【促销-周末】松鼠部落活动票",
+            "ticketTypePrice": "39.9",
+            "ticketItemInfo": [
+              {
+                "ticketTitle": "【大小通用】松鼠部落活动票",
+                "ticketDate": "可订9月22日",
+                "ticketSupply": "西晨票务",
+                "ticketPrice": "39.9"
+              }
+            ]
+          }
+        ]
+      }, {
+        "id": "00002",
+        "ticketGroup": "门票",
+        "ticketTypeInfo": [
+          {
+            "ticketTypeName": "松鼠部落成人票",
+            "ticketTypePrice": "59.9",
+            "ticketItemInfo": [
+              {
+                "ticketTitle": "松鼠部落成人票",
+                "ticketDate": "可订9月18日",
+                "ticketSupply": "去哪儿直销",
+                "ticketPrice": "59.9"
+              }, {
+                "ticketTitle": "【出票快】松鼠部落成人票",
+                "ticketDate": "可订明日",
+                "ticketSupply": "西晨票务",
+                "ticketPrice": "59.9"
+              }, {
+                "ticketTitle": "成都松鼠部落森林假日公园成人票",
+                "ticketDate": "可订9月18日",
+                "ticketSupply": "蓝精灵",
+                "ticketPrice": "59.9"
+              }, {
+                "ticketTitle": "松鼠部落森林假日公园成人票",
+                "ticketDate": "可订9月18日",
+                "ticketSupply": "同程旅游",
+                "ticketPrice": "59.9"
+              }
+            ]
+          }, {
+            "ticketTypeName": "松鼠部落儿童票",
+            "ticketTypePrice": "79.9",
+            "ticketItemInfo": [
+              {
+                "ticketTitle": "松鼠部落儿童票",
+                "ticketDate": "可订9月18日",
+                "ticketSupply": "去哪儿直销",
+                "ticketPrice": "79.9"
+              }, {
+                "ticketTitle": "【出票快】松鼠部落儿童票",
+                "ticketDate": "可订明日",
+                "ticketSupply": "西晨票务",
+                "ticketPrice": "79.9"
+              }, {
+                "ticketTitle": "松鼠部落森林假日公园儿童票",
+                "ticketDate": "可订9月18日",
+                "ticketSupply": "同程旅游",
+                "ticketPrice": "79.9"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
