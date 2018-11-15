@@ -32,7 +32,6 @@
           axios.get('/api/detail.json',{params:{
               id:this.$route.params.id
             }}).then( (res)=> {
-              console.log(res)
             if(res.data.ret && res.data.data){
               that.sightName = res.data.data.sightName
               that.bannerImg = res.data.data.bannerImage

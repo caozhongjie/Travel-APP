@@ -1,25 +1,31 @@
 <template>
       <div>
-        <div class="item" v-for="(item,index) in list" :key="index">
+        <div class="item" v-for="item in list" :key="item.id">
           <div class="item-title border-bottom">
-            <span class="item-title-icon iconfont">&#xe604;</span>
-           {{item.title}}
+            <span class="item-title-icon "></span>
+           {{item.ticketGroup}}
           </div>
-          <div v-if="item.children">
-            <detail-list :list="item.children" class="item-children"></detail-list>
+          <div v-for="(tickType,index) in item.ticketTypeInfo" :key="index">
+            <ticket-list :ticketTypeInfo="tickType"></ticket-list>
           </div>
         </div>
       </div>
 </template>
 
 <script>
+  import ticketList from './tickList'
     export default {
         name: "DetailList",
          props:{
            list:Array
       },
-      mounted(){
-          console.log(this.list)
+      watch:{
+          list:function () {
+            console.log(this.list)
+          }
+      },
+      components:{
+          'ticket-list':ticketList
       }
 
     }
@@ -27,15 +33,23 @@
 
 <style scoped lang="stylus">
   .item-title
-    line-height .8rem
+    position relative
+    z-index 4
+    line-height .88rem
+    height .88rem
     font-size .32rem
-    padding 0 .2rem
+    text-indent .2rem
+    margin-bottom -.02rem
+    border-bottom .05px solid gray
     .item-title-icon
       position relative
-      top .2rem
+      top .08rem
+      left .06rem
       display inline-block
-      margin-right .1rem
-      font-size .72rem
+      width .36rem
+      height .36rem
+      background url('http://s.qunarzz.com/piao/image/touch/sight/detail.png') 0 -.45rem no-repeat
+      background-size .4rem 3rem
   .item-children
     padding 0 .2rem
 

@@ -47,7 +47,6 @@
           this.iconList   = result.data.iconList
           this.recommendList = result.data.recommendList
           this.weekendList =result.data.weekendList
-          console.log(this.weekendList)
         }
       }
     }
